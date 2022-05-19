@@ -1,0 +1,58 @@
+:root{
+    --cor-preto: #000000;
+    --cor-branco: #ffffff;
+    --cor-cinza: #727272;
+    --cor-cinzaclaro: #A8A8A8;
+
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Bai+Jamjuree:wght@200;300;400;500;600;700 & display=swap');
+
+/*Pagina inicial*/
+body {
+    background-color: var(--cor-preto);
+}
+
+/*svg*/
+.imgcentral {
+    position: relative;
+    left: 370px;
+    top: 180px;
+    width: 500px;
+    height: 500px;
+}
+
+/*Titulos*/
+
+.tituloprincipal {
+    display: flow-root;
+    position: absolute;
+    left: 750px;
+    top: 250px;
+}
+
+.tituloprincipal .nome h1 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    color: var(--cor-branco);
+    margin: unset;
+}
+
+.tituloprincipal .sobrenome h2 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    color: var(--cor-branco);
+    margin-top: 10px;
+}
+
+.tituloprincipal .cargo h3 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--cor-cinzaclaro);
+    margin-top: 20px;
+}
+
+/*Fim pagina inicial*/
