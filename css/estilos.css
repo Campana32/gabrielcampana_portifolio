@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --cor-preto: #000000;
+    --cor-branco: #ffffff;
+    --cor-cinza: #727272;
+    --cor-cinzaclaro: #A8A8A8;
+}
+
+body{
+    background-color: var(--cor-preto);
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    /*scroll-snap-type: y mandatory;
+    overflow-y: scroll;*/
+}
+
+section.inicial {
+    width: 100%;
+    height: 100vh;
+   /*scroll-snap-align: start;*/
+}
+
+section.sobre {
+    width: 100%;
+    height: 100vh;
+    /*scroll-snap-align: start;*/
+}
+
+
+
+
+
+/*Pagina inicial*/
+
+/*DESCRIÇÃO*/
+
+
+.port h2{
+    position: absolute;
+    color: var(--cor-branco);
+    width: 50%;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.5vw;
+    padding: 0 0.5%;
+    margin: 0;
+}
+
+.dev h2{
+    position: absolute;
+    color: var(--cor-branco);
+    text-align: left;
+    font-weight: 400;
+    bottom: 20px;
+    font-size: 1vw;
+    padding: 0 0.5%;
+}
+
+/* FIM DESCRIÇÃO*/
+
+/*TITULO E FOTO*/
+
+.fotoinicial{
+    position: absolute; 
+    left: 19%;
+    top: 8%;
+    width: 0px;
+    height: 0px;
+}
+
+.fotoinicial img {
+    width: 80vh;
+    height: 38vw;;
+    object-fit: contain;
+}
+
+.titulo{
+    position: absolute;
+    top: 30%;
+    left: 44%;
+    width: 0px;
+    height: 0px;
+}
+
+.titulo1{
+    position: absolute;
+    top: 45%;
+    left: 44%;
+    width: 0px;
+    height: 0px;
+}
+
+.titulo2{
+    position: absolute;
+    top: 69%;
+    left: 45%;
+    width: 0px;
+    height: 0px;
+}
+
+.titulo h1{
+    color: var(--cor-branco);
+    position: absolute;
+    font-size: 7vw;
+    font-weight: 900;
+}
+
+.titulo1 h2{
+    color: var(--cor-branco);
+    position: absolute;
+    font-size: 7vw;
+    font-weight: 400;
+}
+
+.titulo2 h2{
+    color: var(--cor-cinzaclaro);
+    position: absolute;
+    font-size: 2vw;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* FIM TITULO E FOTO*/
+
+/*REDE SOCIAL*/
+
+section.social{
+    position: absolute;
+    padding: 0 0.5%;
+    top:45%
+}
+
+section.social img{
+    display: block;
+    width: 35px;
+    margin: 15px 0;
+    z-index: 99;
+}
+
+/* FIM REDE SOCIAL*/
+
+/*FUNDO*/
+
+section.fundo .canto1{
+    position: absolute;
+    right: 0;
+    top: -10px;
+    opacity: 0.7
+}
+
+section.fundo .canto1 svg{
+    width: 72vh;
+    height: 32vw;
+}
+
+section.fundo .canto2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.7
+}
+
+section.fundo .canto2 svg{
+    width: 71vh;
+    height: 29vw;
+}
+
+/* FIM FUNDO*/
+
+/* FIM PAGINA INICIAL*/
+
+/*PAGINA SOBRE*/
+
+section.sobre {
+    height: 100%;
+}
+
+section.sobre .caixa{
+    background-color:#191919;
+    position: absolute;
+    width: 60%;
+    height: 87%;
+    margin: 3% 0;
+    border-radius: 0px 50px 50px 0px;
+    left: 0;
+}
+
+section.sobre .subcaixa{
+    background-color:#3F3E3E;
+    position: absolute;
+    width: 80%;
+    height: 55%;
+    left: 8%;
+    margin-top: 8%;
+    border-radius: 60px 60px 60px 60px;
+    box-shadow: 25px 25px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fotosobre{
+    position: absolute; 
+    left: 62%;
+    margin: 1% 0;
+    width: 0px;
+    height: 0px;
+}
+
+.fotosobre img{
+    width: 38vw;
+    height: 94vh;
+    object-fit: contain;
+}
+
+.textosobre h2{
+    color: var(--cor-branco);
+    position: absolute;
+    font-size: 4vw;
+    font-weight: 900;
+    left: 9%;
+    margin-top: 5%;
+}
+
+.textosobre p{
+    color: var(--cor-branco);
+    position: absolute;
+    font-size: 1.5vw;
+    font-weight: 400;
+    left: 9%;
+    margin-top: 12%;
+    max-width: 40%;
+}
+
+
+
+/* FIM PAGINA SOBRE*/
