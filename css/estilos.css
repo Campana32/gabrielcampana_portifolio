@@ -757,108 +757,61 @@ section.bsobre {
 =========================================================================================*/
 
 /* MOBILE */
-@media (max-width: 1000px){
+
+@media screen and (max-width: 1000px){
+
     /* LINK TOPO */
 
 .linktopo{
-    text-decoration: none;
-    background-color: var(--cor-preto);
-    border: solid 0.5px var(--cor-vermelho);
-    position: fixed;
-    bottom: 5vh;
-    right: 2vw;
-    width: 6vw;
-    height: 4.5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all linear 0.2s;
-}
-
-.linktopo:hover{
-    width: 6vw;
-    height: 4,5vh;
-    border: solid 2px var(--cor-vermelho);
+    width: 0;
+    height: 0;
 }
 
 .linktopo img{
-    width: 3vw;
-    height: 3vh;
-    transition: all linear 0.2s;
+    width: 0;
+    height: 0;
 }
 
-.linktopo img:hover{
-    width: 3vw;
-    height: 3vh;
-}
 
 /* FIM LINK TOPO */
 
-/* ---------------------------------------------------------- */
+/* ================================= */
 
 /*Pagina inicial*/
 
 /*TITULO E FOTO*/
 
-.fotoinicial{
-    position: absolute; 
-    left: 19vw;
-    top: 8vh;
-    width: 0px;
-    height: 0px;
-}
-
-.fotoinicial img {
-    width: 10vw;
-    height: 10vh;;
-    object-fit: contain;
+section#inicial {
+    background-image: url(../img/FUNDOGC.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .titulo{
-    position: absolute;
-    top: 37vh;
-    left: 40vw;
-    width: 0px;
-    height: 0px;
+    top: 38vh;
+    left: 31vw;
 }
 
 .titulo1{
-    position: absolute;
     top: 46vh;
-    left: 17vw;
-    width: 0px;
-    height: 0px;
+    left: 7vw;
 }
 
 .titulo2{
-    position: absolute;
-    top: 58vh;
-    left: 27vw;
-    width: 0px;
-    height: 0px;
+    top: 54vh;
+    left: 16vw;
 }
 
 .titulo h1{
-    color: var(--cor-vermelho);
-    position: absolute;
-    font-size: 6vw;
-    font-weight: 300;
+    font-size: 10vw;
 }
 
 .titulo1 h2{
-    font-family: 'Josefin Sans', sans-serif;
-    color: var(--cor-branco);
-    position: absolute;
-    font-size: 13vw;
-    font-weight: 900;
+    font-size: 17vw;
 }
 
 .titulo2 p{
-    color: var(--cor-branco);
-    position: absolute;
-    font-size: 4vw;
-    font-weight: 400;
-    white-space: nowrap;
+    font-size: 6vw;
 }
 
 /* FIM TITULO E FOTO*/
@@ -866,22 +819,18 @@ section.bsobre {
 /*REDE SOCIAL*/
 
 section.social{
-    position: absolute;
-    padding: 0 1.5%;
     top: 2vh;
     right: 0vw;
 }
 
 section.social img{
     display: inline-block;
-    width: 4vw;
+    width: 8vw;
     margin: 0 1vw;
-    z-index: 99;
-    transition: all linear 0.1s;
 }
 
 section.social img:hover{
-    width: 4.5vw;
+    width: 9vw;
 }
 
 /* FIM REDE SOCIAL*/
@@ -903,35 +852,171 @@ section.preto {
 
 /* SETA */
 section.seta .seta a{
-    width: 5vw;
-    height: 5vh;
-    position: absolute;
-    bottom: 1vh;
-    right: 49vw;
-    background-image: url(../img/seta.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation-name: setabaixo;
-    animation-duration: 0.6s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    width: 8vw; 
 }
 
-@keyframes setabaixo{
-    0%{
-        bottom: 5vh;
-    }
-
-    100%{
-        bottom: 2vh;
-    }
-
-}
 /* FIM SETA */
 
 /* FIM FUNDO*/
 
 /* FIM PAGINA INICIAL*/
+
+/* ================================== */
+
+/*PAGINA SOBRE*/
+
+/* FOTO */
+
+.fotosobre{
+    position: absolute; 
+    left: 62%;
+    margin: 1% 0;
+    width: 0px;
+    height: 0px;
+}
+
+.fotosobre img{
+    width: 38vw;
+    height: 94vh;
+    object-fit: contain;
+}
+/* FIM FOTO */
+
+/* TITULO */
+.barrinha{
+    background-color: var(--cor-vermelho);
+    position: absolute;
+    width: 1vw;
+    height: 6vh;
+    left: 9vw;
+    margin-top: 9.5vh;
+    transition: all linear 0.1s;
+}
+
+.textosobre h2{
+    color: var(--cor-branco);
+    position: absolute;
+    font-size: 4vw;
+    font-weight: 400;
+    left: 10.5%;
+    margin-top: 6vh;
+    transition: all linear 0.1s;
+}
+
+/* FIM TITULO */
+
+/* TEXTO */
+.textosobre p{
+    color: var(--cor-cinzaclaro);
+    position: absolute;
+    font-size: 1.5vw;
+    font-weight: 300;
+    left: 9%;
+    margin-top: 9%;
+    max-width: 52%;
+}
+/* FIM TEXTO */
+
+/* BARRAS */
+.textolinguas{
+    color: var(--cor-branco);
+    font-size: 1.5vw;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 50vh;
+    left: 9vw;
+}
+
+.textolinguas h3{
+    font-weight: 500;
+    padding: 1vh 0;
+}
+
+.textolinguas h3{
+    font-weight: 500;
+    padding: 1vh 0;
+}
+
+.barras{
+    display: grid;
+    position: absolute;
+    margin-top: 49vh;
+    left: 15vw;
+}
+
+.barras img{
+    width:42vw;
+    height: 10vh;
+}
+
+.barras .bhtml{
+    margin-top: -2.5vh;
+}
+
+.barras .bcss{
+    margin-top: -2.8vh;
+}
+/* FIM BARRAS */
+
+/* BOTAO */
+section.bsobre {
+    position: absolute;
+    display: grid;
+    margin-top: 80vh;
+    left: 11vw;
+}
+
+.bcontato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-vermelho);
+    width: 13vw;
+    height: 12vh;
+    transition: all linear 0.4s;
+}
+
+.bcontato a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.bcontato:hover{
+    background-color: var(--cor-preto);
+    border: solid 1px var(--cor-vermelho);
+}
+
+.bcuriculo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--cor-preto);
+    border: solid 1px var(--cor-vermelho);
+    width: 15vw;
+    height: 12vh;
+    left: 17vw;
+    transition: all linear 0.4s;
+}
+
+.bcuriculo a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.bcuriculo:hover{
+    background-color: var(--cor-vermelho);
+    border: none;
+}
+/* FIM BOTAO */
+
+/* FIM PAGINA SOBRE */
+
+/* ================================== */
 
 }
 
