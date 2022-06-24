@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -77,7 +76,7 @@ html {
     overflow-y: scroll;
 }
 
-section.teste {
+section.tamanho {
     width: 100%;
     height: 100vh;
     scroll-snap-align: start;
@@ -99,20 +98,6 @@ section.teste {
 /*Pagina inicial*/
 
 /*TITULO E FOTO*/
-
-.fotoinicial{
-    position: absolute; 
-    left: 19%;
-    top: 8%;
-    width: 0px;
-    height: 0px;
-}
-
-.fotoinicial img {
-    width: 80vh;
-    height: 38vw;;
-    object-fit: contain;
-}
 
 .titulo{
     position: absolute;
@@ -819,8 +804,8 @@ section#inicial {
 /*REDE SOCIAL*/
 
 section.social{
-    top: 2vh;
-    right: 0vw;
+    top: 4vh;
+    left: 29vw;
 }
 
 section.social img{
@@ -853,6 +838,7 @@ section.preto {
 /* SETA */
 section.seta .seta a{
     width: 8vw; 
+    left: 46.3vw;
 }
 
 /* FIM SETA */
@@ -904,6 +890,7 @@ section#sobre {
 
 /* TEXTO */
 .textosobre p{
+    text-align: justify;
     font-size: 3vw;
     font-weight: 300;
     left: 9%;
@@ -980,4 +967,269 @@ section.bsobre {
 
 /* ================================== */
 
+/* PAGINA PORTIFOLIO */
+
+section#portifolio {
+    height: 115vh;
 }
+
+/* TITULO */
+.barrinha{
+    width: 1.5vw;
+    height: 3vh;
+    left: 9vw;
+    margin-top: 7.5vh;
+}
+
+.textoportifolio h2{
+    font-size: 8vw;
+    left: 12vw;
+    margin-top: 6vh;
+}
+/* FIM TITULO */
+
+/* TEXTO */
+.textoportifolio p{
+    text-align: justify;
+    font-size: 3vw;
+    left: 9%;
+    margin-top: 12vh;
+    max-width: 80%;
+}
+/* FIM TEXTO */
+
+/* SUBTITULO */
+
+.subtituloportifolio h3{
+    font-size: 5vw;
+    left: 9.5%;
+    margin-top: 35vh;
+}
+
+.sublinhado{
+    width: 38vw;
+    height: 0.5vh;
+    left: 9.5vw;
+    margin-top: 38.2vh;
+}
+
+/* FIM SUBTITULO */
+
+/* BOX PORTIFOLIO */
+
+/* BOX */
+
+
+.boxportifolio{
+    border: solid 0.5vw var(--cor-vermelho);
+    width: 70vw;
+    height: 22vh;
+    left: 15vw;
+    margin-top: 43vh;
+}
+
+.boxportifolio:hover{
+    border: solid 0.7vw var(--cor-vermelho);
+}
+
+.bportifolio {
+    border: solid 0.4vw var(--cor-vermelho);
+    width: 15vw;
+    height: 7.5vh;
+    left: -3vw;
+    margin-top: 3vh;
+}
+
+.bportifolio svg{
+    width: 9vw;
+    height: 4vh;
+}
+
+.boxportifolio:nth-last-child(1){
+    left: 15vw;
+    margin-top: 68vh;
+}
+
+.boxportifolio:nth-last-child(2){
+    left: 15vw;
+    margin-top: 93vh;
+}
+/* FIM BOX */
+
+/* TEXTO PORTIFOLIO */
+.boxportifolio h2{
+    font-size: 8vw;
+    left: 7.5vh;
+    margin-top: 0.5vh;
+}
+
+.boxportifolio h3{
+    font-size: 5vw;
+    font-weight: 400;
+    left: 16vw;
+    margin-top: 6vh;
+}
+
+.boxportifolio p{
+    font-size: 6vw;
+    font-weight: 300;
+    left: 1vh;
+    margin-top: 17vh;
+}
+/* FIM TEXTO PORTIFOLIO */
+
+/* FIM PAGINA PORTIFOLIO */
+
+/* ================================== */
+
+/* PAGINA CONTATO */
+
+section#contato {
+    height: 140vh;
+}
+
+.barrinha{
+    width: 1.5vw;
+    height: 3vh;
+    left: 9vw;
+    margin-top: 7.5vh;
+}
+
+.textocontato h2{
+    font-size: 8vw;
+    font-weight: 400;
+    left: 12vw;
+    margin-top: 6vh;
+}
+
+.subtitulo h3{
+    font-size: 4.5vw;
+    font-weight: 300;
+    left: 9vw;
+    margin-top: 13vh;
+    max-width: 80%;
+}
+
+/* BOX CONTATO */
+
+
+.barrinhacontato{
+    width: 0.5vw;
+    height: 4vh;
+    left: 10vw;
+    margin-top: 25vh;
+}
+
+.barrinhacontato1{
+    width: 0.5vw;
+    height: 4vh;
+    left: 10vw;
+    margin-top: 32vh;
+}
+
+.barrinhacontato2{
+    width: 0.5vw;
+    height: 4vh;
+    left: 10vw;
+    margin-top: 39vh;
+}
+
+.barrinhacontato3{
+    width: 0.5vw;
+    height: 4vh;
+    left: 10vw;
+    margin-top: 46vh;
+}
+
+.caixatexto{
+    width: 43vw;
+    height: 4vh;
+    left: 13vw;
+    margin-top: 25vh;
+}
+
+.caixatexto:nth-last-child(1){
+    margin-top: 32vh;
+    width: 77vw;
+}
+
+.caixatexto:nth-last-child(2){
+    margin-top: 39vh;
+    width: 65vw;
+}
+
+.caixatexto:nth-last-child(3){
+    margin-top: 46vh;
+    width: 45vw;
+}
+
+.caixatexto h3{
+    font-size: 3.4vw;
+    font-weight: 500;
+    left: 2vw;
+}
+
+.socialcontato{
+    padding: 0 1.5%;
+    left: 8vw;
+    margin-top: 54vh;
+}
+
+.socialcontato img{
+    width: 8vw;
+}
+
+.socialcontato img:hover{
+    width: 9vw;
+}
+
+
+/* FIM BOX CONTATO */
+
+.barrinhadivisao{
+    height: 0.1vh;
+    width: 87vw;
+    margin-top: 62vh;
+    left: 7vw;
+}
+
+/* E-MAIL */
+
+.email{
+    left: 19vw;
+    margin-top: 67vh
+}
+
+.boxnome{
+    margin-top: 0vh;
+    height: 5vh;
+    width: 65vw;
+    font-size: 4vw;
+}
+
+.boxemail{
+    margin-top: 7vh;
+    height: 5vh;
+    width: 65vw;
+    font-size: 4vw;
+}
+
+.boxmensagem{
+    margin-top: 14vh;
+    height: 18vh;
+    width: 65vw;
+    font-size: 4vw;
+}
+
+.boxbotao{
+    margin-top: 35vh;
+    left: 14vw;
+    height: 6vh;
+    width: 38vw;
+    font-size: 4vw;
+}
+
+/* FIM E-MAIL */
+/* FIM CONTATO */
+}
+/*FIM MOBILE */
